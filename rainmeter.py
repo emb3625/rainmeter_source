@@ -22,11 +22,11 @@ def gen_log(data):
 
 ### MAIN #############################################
 r = praw.Reddit("/r/rainmeter source enforcer by /u/Pandemic21")
-USERNAME=''
-PASSWORD=''
+USERNAME='rainmetersourcebot'
+PASSWORD='vkjDGdUQuh8f'
 LOGFILE='/home/pandemic/Documents/scripts/rainmeter/rainmeter.log'
 GRACE_PERIOD=60*60*6 # 6 hours in seconds	
-COMMENT_TEXT="It looks like your submission does not comply with Rule B.1.\n\n>If you share a completed setup, provide download links to skins and wallpapers shown within six hours of posting.\n\nPlease reply to your submission with the download links."
+COMMENT_TEXT="Thank you for submitting to /r/rainmeter. Your post has been temporarily removed because it looks like your submission does not comply with Rule 1 of the Post Requirements.\n\n>If you share a completed setup, provide download links to skins and wallpapers shown within six hours of posting.\n\nPlease reply to your submission with the download links to have your post re-approved. Thank you."
 sub = r.get_subreddit("rainmeter")
 conn = sqlite3.connect('/home/pandemic/Documents/scripts/rainmeter/rainmeter.db')
 c = conn.cursor()
